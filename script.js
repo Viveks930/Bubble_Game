@@ -42,7 +42,7 @@ function makeBubble() {
     } else {
         for (let i = 1; i <= 96; i++) {
             const rn = Math.floor(Math.random() * 10);
-            counter += `<div id="bubble" style="background-color:${getRandomColor()}">${rn}</div>`;
+            counter += `<div id="bubble" style="background-color:${getRandomColor()};color:black;">${rn}</div>`;
         }
     }
     pbtm.innerHTML = counter;
