@@ -24,7 +24,7 @@ function start() {
 function makeBubble() {
     let counter = '';
     if(window.outerWidth < 500){
-        for (let i = 1; i <=60; i++) {
+        for (let i = 1; i <=62; i++) {
             const rn = Math.floor(Math.random() * 10);
             counter += `<div id="bubble">${rn}</div>`;
         }
