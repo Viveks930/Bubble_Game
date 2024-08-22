@@ -23,9 +23,16 @@ function start() {
 
 function makeBubble() {
     let counter = '';
-    for (let i = 1; i <= 96; i++) {
-        const rn = Math.floor(Math.random() * 10);
-        counter += `<div id="bubble">${rn}</div>`;
+    if(window.outerWidth < 500){
+        for (let i = 1; i <=60; i++) {
+            const rn = Math.floor(Math.random() * 10);
+            counter += `<div id="bubble">${rn}</div>`;
+        }
+    }else{
+        for (let i = 1; i <= 96; i++) {
+            const rn = Math.floor(Math.random() * 10);
+            counter += `<div id="bubble">${rn}</div>`;
+        }
     }
     pbtm.innerHTML = counter;
 }
