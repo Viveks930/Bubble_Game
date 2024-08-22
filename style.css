@@ -148,11 +148,15 @@ html,body{
     width: 100%;
     height: 100%;
 }
-/* @media (max-width:480px){
-    .element{
-        width: 33%;
-    }
-} */
+#hitbox h2{
+    color: rgb(173, 237, 131);
+    font-size: 3rem;
+    font-weight: 700;
+}
+#hit{
+    font-weight: 900;
+    font-size: 2rem;
+}
 
 @media only screen and (max-width: 480px) {
     #panel {
