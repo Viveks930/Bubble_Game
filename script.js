@@ -15,6 +15,14 @@ let r,g,b;
 startbtn.addEventListener('click', start);
 restart.addEventListener('click', () => location.reload());
 
+// function randombgcolor(){
+//     r = (Math.round(Math.random()*256))
+//     g = (Math.round(Math.random()*256))
+//     b = (Math.round(Math.random()*256))
+//     let randomcolor = `rgb(${r},${g},${b})`
+//     console.log(randomcolor)
+//     bubble.style.backgroundColor = `rbg(0,0,0)`
+// }
 function getRandomColor() {
     const r = Math.floor(Math.random() * 256); // Red
     const g = Math.floor(Math.random() * 256); // Green
@@ -29,7 +37,7 @@ function start() {
     getnewhit();
     makeBubble();
 
-    // timer();
+    timer();
 }
 
 function makeBubble() {
